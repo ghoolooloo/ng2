@@ -1,0 +1,7 @@
+{
+  "realm": "demo",
+  "auth-server-url": "http://auth.jo:8080/auth",
+  "ssl-required": "external",
+  "resource": "ng2",
+  "public-client": true
+}
