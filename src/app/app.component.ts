@@ -16,7 +16,7 @@ export class AppComponent {
   user = this.authenticated() ? KeycloakService.keycloakAuth.tokenParsed['preferred_username'] : '游客';
 
   roles = this.authenticated() ? KeycloakService.keycloakAuth.realmAccess.roles : [];
-  roles2 = this.authenticated() ? KeycloakService.keycloakAuth.resourceAccess.ng2.roles : [];
+  roles2 = this.authenticated() ? KeycloakService.keycloakAuth.resourceAccess['ng2'].roles : [];
 
   message: string;
   errorClass: string = '';
