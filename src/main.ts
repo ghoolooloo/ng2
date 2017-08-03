@@ -10,7 +10,7 @@ if (environment.production) {
   enableProdMode();
 }
 
-KeycloakService.init({ onLoad: 'check-sso', checkLoginIframeInterval: 1 })
+KeycloakService.init({ onLoad: 'login-required', checkLoginIframeInterval: 1 })
   .then(() => {
     platformBrowserDynamic().bootstrapModule(AppModule);
   })
